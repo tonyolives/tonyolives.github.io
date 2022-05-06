@@ -5,6 +5,8 @@ NECESSARY INFO
 green = #04A84B
 red = #EF2727
 dark grey = #545454
+"white" = #f3f3f3
+container = #e3e3e3
 
 resources used:
 https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website/
@@ -40,6 +42,8 @@ a {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0px;
+    position:sticky;
+	top: 0;
 }
 .logo {
     width: 120px;
@@ -75,10 +79,10 @@ a {
 .content {
     width: 100%;
     position: relative;
-    top: 35%;
+    top: 27%;
     transform: translateY(-50%);
     text-align: center;
-    color: #fff;
+    color: #f3f3f3;
     justify-content: center;
 }
 .content h1 {
@@ -97,9 +101,9 @@ button {
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #fff;
+    border: 2px solid #f3f3f3;
     background: transparent;
-    color: #fff;
+    color: #f3f3f3;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -140,7 +144,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 body h1 {
-    color: #fff;
+    color: #f3f3f3;
 }
 
 
@@ -181,6 +185,7 @@ p {
 
 .container {
     padding: 30px;
+    color: #545454;
     width: 80%;
     align-items: center;
     margin: auto;
@@ -217,4 +222,46 @@ p {
     text-align: center;
     overflow: hidden;
     line-height: 2;
+}
+
+.pricingcontainer {
+    text-align: center;
+}
+
+.column {
+    width: 40%;
+    color: #545454;
+    background-color: #f3f3f3;
+    border: 2px solid #545454;
+    border-radius: 8px;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.container button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #545454;
+    background: transparent;
+    color: #545454;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.container button:hover span {
+    width: 100%;
+}
+
+.container button:hover {
+    border-color: #04A84B;
+    color: #04A84B;
 }
